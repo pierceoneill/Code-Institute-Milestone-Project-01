@@ -495,13 +495,13 @@ blockquote.quote {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(/../../assets/images/monkees.jpg); 
+  background-image: url(../assets/images/monkees.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(assets/images/monkeesfunny.jpg);
+  background-image: url(../images/monkeesfunny.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url("Code-Institute-Milestone-Project-01/assets/images/monkeesfunny.jpg");
+  background-image: url("../images/monkeesfunny.jpg");
 }
 
 /*************************Event List*/
