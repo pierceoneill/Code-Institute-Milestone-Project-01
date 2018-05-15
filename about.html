@@ -4,39 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Monkees | About</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="assets/css/style.css" rel="stylesheet">
-	<script>
-        function finalCost(){
-            var roomType = document.getElementById("room_type").value;
-            var roomNum = document.getElementById("room_number").value;
-            var personNum = document.getElementById("person_number").value;
-            var childNum = document.getElementById("child_number").value;
-            var resFacilities = document.getElementById("res_facilities").value;
-
-            var total = (parseInt(roomType)*10) + ((roomNum)*2) + ((personNum)*3) + ((childNum)*2) + ((resFacilities)*5)
-
-            document.getElementById("result").innerHTML = total;
-        }
-    </script>
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default">
-        <div class="container-fluid alert-container hidden-xs">
+         <div class="container-fluid alert-container hidden-xs">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="site-wide-alert alert alert-warning">
-                        <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
+                        <strong>Early Bird Sale</strong> We've got a sale special. Book before 31.06.2018 for 10% Discount</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +48,7 @@
                 </ul>
 
                 <div class="navbar-header navbar-right hidden-xs">
-                    <a href="bookings.html" class='btn btn-default navbar-btn'>Sign Up</a>
+                    <a class='btn btn-default navbar-btn' data-toggle='modal' data-target='#signUpModal'>Sign Up</a>
                     <p class="navbar-text"><i>Hey, Hey, We're the Monkees! Join the Fanclub</i></p>
                 </div>
             </div>
@@ -113,7 +98,7 @@ data-interval="5000" id="bs-carousel">
     </div>
 </div>
 
-
+<!--- Discography -->
 <div class="container">
     <div class="page-header">
 		<h1 id="">Discography</h1>
@@ -146,13 +131,10 @@ data-interval="5000" id="bs-carousel">
                         <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 10/10/1966</small></p> </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
-<!--due -->
 
 <div class="row timeline-movement">
     <div class="timeline-badge">
@@ -316,7 +298,7 @@ data-interval="5000" id="bs-carousel">
 </div>
 
 <div class="row timeline-movement">
-     <div class="timeline-badge">
+    <div class="timeline-badge">
         <span class="timeline-balloon-year">2006</span>
     </div>
      <div class="col-sm-offset-6 col-sm-6  timeline-item">
@@ -332,23 +314,21 @@ data-interval="5000" id="bs-carousel">
         </div>
     </div>
 </div>
-
-</div>
-</div>
 </div>
 
 <hr class="my-4">
 
 
-<!--- Meet the team -->
+<!--- Meet the band -->
 <div class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
 			<h1 class="display-4">Meet the Band</h1>
 		</div>
-		<hr>
+	   <hr>
 	</div>
 </div>
+
 
 <!--- Cards -->
 <div class="container-fluid padding">
@@ -359,37 +339,36 @@ data-interval="5000" id="bs-carousel">
 				<div class="card-body">
 					<h4 class="card-title">Davy Jones</h4>
 					<p class="card-title">Vocals</p>
-					<a href="#" class ="btn btn-outline-secondary">more info</a>
 				</div>
 			</div>	
 		</div>
+		
 		<div class="col-md-3">
 			<div class="card">
 				<img class="card-img-top" src="assets/images/md.jpg">
 				<div class="card-body">
 					<h4 class="card-title">Micky Dolenz</h4>
 					<p class="card-title">Drums & Vocals</p>
-					<a href="#" class ="btn btn-outline-secondary">more info</a>
 				</div>
 			</div>	
 		</div>
+		
 		<div class="col-md-3">
 			<div class="card">
 				<img class="card-img-top" src="assets/images/mn.jpg">
 				<div class="card-body">
 					<h4 class="card-title">Michael Nesmith</h4>
 					<p class="card-title">Guitar & Vocals</p>
-					<a href="#" class ="btn btn-outline-secondary">more info</a>
 				</div>
 			</div>	
 		</div>
+		
 		<div class="col-md-3">
 			<div class="card">
 				<img class="card-img-top" src="assets/images/pt.jpg">
 				<div class="card-body">
 					<h4 class="card-title">Peter Tork</h4>
 					<p class="card-title">Guitar & Vocals</p>
-					<a href="#" class ="btn btn-outline-secondary">more info</a>
 				</div>
 			</div>	
 		</div>
@@ -398,6 +377,41 @@ data-interval="5000" id="bs-carousel">
 <hr class="my-4">
 </div>
 
+<!--- Two Column Section -->
+
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2 class="text-center">Who are the Monkees?</h2>
+			<br>
+			<p>
+				<strong>Micky Dolenz:</strong> The funny one. Played the drums. Straightened hair first season, curly hair second. Often seen wearing a tablecloth.
+			</p>
+			<p>
+				<strong>Mike Nesmith:</strong> The straight man. The leader. Tall cool Texan - often mistaken for serious by those who don't catch his subtle deadpan humor. Played the guitar. Often seen in sideburns and wearing a green wool hat.
+			</p>
+			<p>
+				<strong>Peter Tork:</strong> The Dummy (not in real life.) Played the bass, but also played guitar, banjo, piano etc. Often seen in mocassin boots & wearing his belt buckle off to the side (so he wouldn't scratch his guitar!)
+			</p>
+			<p>
+				<strong>Davy Jones:</strong> The Face. The cute one. The short one. The British one. Played the tamborine and maracas. Fell in love at least once a day, always got the girl. Often seen with stars in his eyes.
+			</p>
+			<BR>
+			<blockquote class="blockquote text-center">
+                  <p class="mb-0">"When I first heard that The Monkees were going to record "I'm A Believer," I thought I had died and gone to heaven... "I'm A Believer" was bigger than anyone expected.  Big enough to launch The Monkees to the #1 spot worldwide and to take my own career up a notch just on the uplift of their commercial coattails.  For giving me that, I will be eternally grateful to The Monkees."
+                    </p>
+              <footer class="blockquote-footer">Neil Diamond</footer>
+            </blockquote>
+			<br>
+		
+		</div>
+		<div class="col-lg-6">
+			<img src="assets/images/monkees.jpg" class="img-responsive">
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
 <!--- Connect -->
 <div class="container-fluid padding">
 	<div class="row text-center padding">
@@ -411,7 +425,7 @@ data-interval="5000" id="bs-carousel">
 		</div>
 	</div>
 </div>
-
+</body>
 <!--- Footer -->
 <footer>
 	<div class="container-fluid padding">
@@ -447,5 +461,34 @@ data-interval="5000" id="bs-carousel">
 	</div>
 </footer>
 
-</body>
+<!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up For The Monkees NEWS!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </html>

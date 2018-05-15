@@ -7,10 +7,6 @@ html, body {
   color: #222;
 }
 
-.bg-color-work-history{
-    background-color: #2A9D8F;
-}
-
 .carousel-inner img {
   width: 100%;
   height: 100%;
@@ -141,131 +137,6 @@ hr.light-100 {
 }
 
 
-
-/* Containers */
-
-.container-wrapper {}
-
-.container-wrapper--red {
-    background-color: #13af6e;
-    color: white;
-}
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a{
-    font-size: 4em;
-    padding: 2rem;
-  }
-  }
-@media (max-width: 768px) {
-  .carousel-caption {
-  top: 45%;
-}
-
-.carousel-caption h1 {
-  font-size: 350%;
-}
-
-.carousel-caption h3 {
-  font-size: 140%;
-  font-weight: 400;
-  padding-bottom: 0.2rem;
-}
-
-.carousel-caption .btn{
-  font-size: 95%;
-  padding: 8px 14px;
-}
-
-.display-4 {
-  font-size: 200%;
-}
-
-.social a{
-    font-size: 2.5em;
-    padding: 1.2rem;
-  }
-
-}
-@media (max-width: 576px) {
- .carousel-caption {
-  top: 40%;
-}
-
-.carousel-caption h1 {
-  font-size: 250%;
-}
-
-.carousel-caption h3 {
-  font-size: 110%;
-}
-
-.carousel-caption .btn{
-  font-size: 90%;
-  padding: 4px 8px;
-}
-
-.carousel-indicators {
-  display: none;
-}
-
-.display-4 {
-  font-size: 160%;
-}
-
-.social a{
-    font-size: 2em;
-    padding: 0.7rem;
-  }
-
-}
-
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
-
-
 /* Navbar */
 
 .navbar {
@@ -356,7 +227,68 @@ figure {
     width: 35px;
 }
 
+/* Containers */
 
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+
+.callout-container {
+    height: 100vh;
+
+    background: url('/assets/images/monkees.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Jumbotron */
+
+.jumbotron01 {
+    background-color: transparent;
+}
+
+.jumbotron01 h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.jumbotron01 .lead {
+    color: #a7a7a7;
+    margin: 25px 0;
+}
+
+.jumbotron01 small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
 
 /* Alert */
 
@@ -539,9 +471,9 @@ blockquote.quote {
             transition: 2s all ease-in-out 5s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
+
+/*-------------------------Overlay------ */
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -552,9 +484,8 @@ blockquote.quote {
 }
 
 
-/********************************/
-/*       Slides backgrounds     */
-/********************************/
+/*------------------Slides backgrounds-*/
+
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
@@ -1071,36 +1002,147 @@ img:hover {
   border: 1px solid #ffffff;
 }
 
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem;
+  }
+  }
+@media (max-width: 768px) {
+  .carousel-caption {
+  top: 45%;
+}
 
+.carousel-caption h1 {
+  font-size: 350%;
+}
 
+.carousel-caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: 0.2rem;
+}
 
+.carousel-caption .btn{
+  font-size: 95%;
+  padding: 8px 14px;
+}
 
+.display-4 {
+  font-size: 200%;
+}
 
+.social a{
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
 
-/********************************/
-/*          Media Queries       */
-/********************************/
+}
+@media (max-width: 576px) {
+ .carousel-caption {
+  top: 40%;
+}
+
+.carousel-caption h1 {
+  font-size: 250%;
+}
+
+.carousel-caption h3 {
+  font-size: 110%;
+}
+
+.carousel-caption .btn{
+  font-size: 90%;
+  padding: 4px 8px;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.display-4 {
+  font-size: 160%;
+}
+
+.social a{
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+
+}
+
 @media screen and (min-width: 980px){
     .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
 
 
+
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
