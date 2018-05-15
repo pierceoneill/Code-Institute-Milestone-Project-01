@@ -239,7 +239,7 @@ hr.light-100 {
 .callout-container {
     height: 100vh;
 
-    background: url('monkeesfunny.jpg') no-repeat center center fixed;
+    background: url('.../assets/images/monkeesfunny.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
