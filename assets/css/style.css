@@ -495,7 +495,7 @@ blockquote.quote {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../assets/images/monkees.jpg); 
+  background-image: url(/../../assets/images/monkees.jpg); 
 }
 .fade-carousel .slides .slide-2 {
   background-image: url(assets/images/monkeesfunny.jpg);
