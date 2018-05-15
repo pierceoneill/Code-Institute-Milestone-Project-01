@@ -239,7 +239,7 @@ hr.light-100 {
 .callout-container {
     height: 100vh;
 
-    background: url('assets/images/monkeesfunny.jpg') no-repeat center center fixed;
+    background: url('../images/monkeesdressup.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -495,10 +495,10 @@ blockquote.quote {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../images/monkees.jpg); 
+  background-image: url("../images/monkees.jpg"); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../images/monkees-music.jpg);
+  background-image: url("../images/monkees-music.jpg");
 }
 .fade-carousel .slides .slide-3 {
   background-image: url("../images/monkeesfunny.jpg");
