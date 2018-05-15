@@ -239,7 +239,7 @@ hr.light-100 {
 .callout-container {
     height: 100vh;
 
-    background: url('./assets/images/monkees.jpg') no-repeat center center fixed;
+    background: url('../assets/images/monkees.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -495,13 +495,13 @@ blockquote.quote {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(./assets/images/monkees.jpg); 
+  background-image: url(../assets/images/monkees.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(./assets/images/monkees-music.jpg);
+  background-image: url(../assets/images/monkees-music.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(./assets/images/monkeesfunny.jpg);
+  background-image: url(../assets/images/monkeesfunny.jpg);
 }
 
 /*************************Event List*/
