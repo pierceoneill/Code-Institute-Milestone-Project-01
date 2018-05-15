@@ -5,21 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Monkees | Home</title>
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Monkees | Media </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet">
-</head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid alert-container hidden-xs">
             <div class="row">
                 <div class="col-xs-12">
@@ -51,7 +51,7 @@
                 </ul>
 
                 <div class="navbar-header navbar-right hidden-xs">
-                    <a href="bookings.html" class='btn btn-default navbar-btn'>Sign Up</a>
+                    <a class='btn btn-default navbar-btn' data-toggle='modal' data-target='#signUpModal'>Sign Up</a>
                     <p class="navbar-text"><i>Hey, Hey, We're the Monkees! Join the Fanclub</i></p>
                 </div>
             </div>
@@ -88,7 +88,7 @@ data-interval="5000" id="bs-carousel">
             <hgroup>
                  <h1>Welcome</h1>
             </hgroup>
-            <button class="btn btn-prim" a href="bookings.html" role="button">Book NOW</button>
+            <button class="btn btn-prim"  role="button"><a href="bookings.html">Book NOW</a></button>
         </div>
     </div>
 </div>
@@ -139,36 +139,31 @@ data-interval="5000" id="bs-carousel">
 	</div>
 	<hr class="my-4">
 	</div>
-			
-<!--- Two Column Section -->
 
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-lg-6">
-			<h2>Who are the Monkees?</h2>
-			<br>
-			<p>
-				<strong>Micky Dolenz:</strong> The funny one. Played the drums. Straightened hair first season, curly hair second. Often seen wearing a tablecloth.
-			</p>
-			<p>
-				<strong>Mike Nesmith:</strong> The straight man. The leader. Tall cool Texan - often mistaken for serious by those who don't catch his subtle deadpan humor. Played the guitar. Often seen in sideburns and wearing a green wool hat.
-			</p>
-			<p>
-				<strong>Peter Tork:</strong> The Dummy (not in real life.) Played the bass, but also played guitar, banjo, piano etc. Often seen in mocassin boots & wearing his belt buckle off to the side (so he wouldn't scratch his guitar!)
-			</p>
-			<p>
-				<strong>Davy Jones:</strong> The Face. The cute one. The short one. The British one. Played the tamborine and maracas. Fell in love at least once a day, always got the girl. Often seen with stars in his eyes.
-			</p>
-			<br>
-			<a href="about.html" class="btn btn-warning">more info</a>
-		</div>
-		<div class="col-lg-6">
-			<img src="assets/images/monkees.jpg" class="img-responsive">
-		</div>
-	</div>
-</div>
-</div>
-<hr class="my-4">
+<div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="row">
+            <div class="col-xs-12">
+                <section class="callout jumbotron text-center">
+                    <h1>Want more videos like this?</h1>
+                    <video width="75%" height="auto" controls autoplay>
+                        <source src="assets/videos/themonkees.mp4"  type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <hr class='block-divider block-divider--orange'>
+                    <p class="lead">Follow and Subscribe to be one of the first to know the latest news on the Monkees.</p>
+                        <button class="btn btn-lg btn--cta btn--red" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
+                        <ul class="list-inline social-links">
+                            <li><a target="_blank" href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    <p class="text-muted"><small>You must be over 16 to sign up to our service. </small></p>
+                </section>
+            </div>
+        </div>
+    </div>
+			
 
 <!--- Two Column Section -->
 <div class="container-fluid padding">
@@ -184,6 +179,16 @@ data-interval="5000" id="bs-carousel">
 			<p>	
 				With the sudden death of lead singer Davy Jones in 2012, the 3 remaining members will perform all the hits.
 			</p>
+			<p>		
+				The tour kicks off on September 1st in Dublin, Ireland and runs though to April 29th 2019 in Fort Myers, Florida, though more dates may be added. 
+				The group expects to play some new songs, though the show will revolve around their deep catalog of classics.
+			</p>
+			
+			<blockquote class="blockquote text-center">
+  				<p class="mb-0">"I've always felt it was important to give the audience what they want,which is the hits. Peter and I do a lovely acoustic portion of the show, like we're sitting around a campfire. Our vocal blend has become very, very interesting."
+  				</p>
+  					<footer class="blockquote-footer">Micky Dolenz<cite title="Source Title"> - About the COMEBACK Tour</cite></footer>
+			</blockquote>
 			<a href="bookings.html" class="btn btn-warning">Book Now</a>
 			<br>
 		</div>
@@ -191,7 +196,7 @@ data-interval="5000" id="bs-carousel">
 </div>
 <hr class="my-4">
 </div>
-
+   
 <!--- Connect -->
 <div class="container-fluid padding">
 	<div class="row text-center padding">
@@ -240,7 +245,37 @@ data-interval="5000" id="bs-carousel">
 		</div>
 	</div>
 </footer>
-
+<!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up For The Monkees NEWS!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
 
